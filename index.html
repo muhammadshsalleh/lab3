@@ -4,13 +4,18 @@
     <style>
         
     </style>
-    <link rel="stylesheet" href="../lab3/style.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <table style="width:1000px">
+
+    <div class="image-container">
+        <div class="text">WOW! A PAGE ABOUT ME</div>
+    </div>
+
+    <table>
         <tr>
             <th>Name</th>
             <td>Muhammad bin Sh Salleh</td>
@@ -99,11 +104,45 @@
         </tr>
     </table>
    
+    
+    <button type="button" class="collapsible">My hobby +</button>
+    <div class="content">
+        <p>Most of the time will spend time watching anime and playing game. Other hobbies are like 
+            work out, cooking, making dessert, gardening. I also like cleaning sorrounding area.
+        </p>
+    </div>
+
+    <button type="button" class="collapsible">My campus life +</button>
+    <div class="content">
+        <p>To be honest, its quite good since my home is at Sri Gading. For subjects that been taken/learned,
+            i get some best idea/opputunites that can be used in my future work.
+        </p>
+    </div>
+
+
+    <!--For collapse block-->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
 
 
 
-
-
+    <div class="footer">
+        <h2>Property of Muhammad @Fruitypie</h2>
+    </div>
 
 
 </body>
