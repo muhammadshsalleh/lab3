@@ -12,7 +12,7 @@ th, td{
 
 /*for image*/
 .image-container {
-    background-image: url("nature.jpg");
+    background-image: url("image/nature.jpg");
     background-size: cover;
     position: relative;
     height: 520px;
